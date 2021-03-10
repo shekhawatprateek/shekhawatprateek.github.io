@@ -314,6 +314,12 @@ border: 1px solid var(--borderColor);
 box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.post:hover {
+    transform: scale(1.04);
 }
 
 .thumbnail {
@@ -338,6 +344,25 @@ box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
     color: #4b5156;
     font-size: 14px;
 }
+
+/* .animationBorder {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: animate 4s steps(25);
+}
+
+@keyframes animate {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 12ch;
+    }
+    80% {
+        width: 25ch;
+    }
+} */
+
 
 #contact-form {
     display: block;
