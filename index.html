@@ -10,24 +10,161 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./default.css" />
+    <link id="theme-style" rel="stylesheet" href="">
   </head>
   <body>
     <section class="s1">
       <div class="main-container">
-        <h1>Hi, I'm Prateek Shekhawat</h1>
-        <p>This is a sentence</p>
-        <a href="#">Link</a>
+          <div class="greeting-wrapper">
+              <h1>Hi, I'm Prateek Shekhawat</h1>
+          </div>
+          <div class="intro-wrapper">
+              <div class="nav-wrapper">
+                  <div class="dots-wrapper">
+                    <div id="dot-1" class="browser-dot">
+
+                    </div>
+                    <div id="dot-2" class="browser-dot">
+
+                    </div>
+                    <div id="dot-3" class="browser-dot">
+
+                    </div>
+                  </div>
+                  <ul id="navigation">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="left-column">
+                  <img id='profile-pic' src="./images/mypic.JPG" alt="mypic">
+                  <h5 style="text-align: center; line-height: 0;">Peronalize Theme</h5>
+                  <div id="theme-options-wrapper">
+                      <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                      <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                      <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                      <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                  </div>
+                  <p id="settings-note">*Theme options will be saved for <br> your next visit</p>
+              </div>
+              <div class="right-column">
+                  <div id="preview-shadow">
+                    <div id="preview">
+                        <div class="corner" id="corner-tl"></div>
+                        <div class="corner" id="corner-tr"></div>
+                        <h3>what I Do?</h3>
+                        <p>I'm a website and web applications developer dsajdjsajdjaskdjsjadjsahdjhasdhks dsajdsajdj</p>
+                        <div class="corner" id="corner-bl"></div>
+                        <div class="corner" id="corner-br"></div>
+                    </div>
+                  </div>
+              </div>
+          </div>
       </div>
     </section>
 
     <section class="s2">
-      <div class="main-container">About</div>
+      <div class="main-container">
+          <div class="about-wrapper">
+              <div class="about-me">
+                  <h4>More about Me</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium expedita explicabo voluptatum asperiores, possimus magnam!</p>
+                  <hr>
+                  <h4>Top Expertise</h4>
+                  <p>Fullstack developer with primary focus on React:
+                      <a href="Resume.pdf" target="_blank">Download Resume</a>
+                  </p>
+
+                  <div id="skills">
+                        <ul>
+                            <li>Html/Css</li>
+                            <li>NodeJS</li>
+                            <li>ExpressJS</li>
+                            <li>MongoDB</li>
+                            <li>ReactJS</li>
+                        </ul>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>Python</li>
+                            <li>Github</li>
+                            <li>Material UI</li>
+                            <li>Firebase</li>
+                        </ul>
+                  </div>
+
+              </div>
+              <div class="social-links">
+                <img id="social_img" src="./images/smedia.jpg" alt="smedia" >
+                <h3>Find me on LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/prateekshekhawat/" target="_blank">LinkedIn</a>
+              </div>
+          </div>
+      </div>
     </section>
     <section class="s1">
-      <div class="main-container">Portfolio</div>
+      <div class="main-container">
+          <h3 style="text-align: center">Some of my projects</h3>
+          <div class="post-wrapper">
+
+                <div>
+
+                    <div class="post">
+                        <img class="thumbnail" src="./images/mypic.JPG" alt="" srcset="">
+                        <div class="post-preview">
+                            <h5 class="post-title">Post Title</h5>
+                            <p class="post-intro">This is a Senetence and descrition od projects</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+
+                    <div class="post">
+                        <img class="thumbnail" src="./images/mypic.JPG" alt="" srcset="">
+                        <div class="post-preview">
+                            <h5 class="post-title">Post Title</h5>
+                            <p class="post-intro">This is a Senetence and descrition od projects Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, vero!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                    <div class="post">
+                        <img class="thumbnail" src="./images/mypic.JPG" alt="" srcset="">
+                        <div class="post-preview">
+                            <h5 class="post-title">Post Title</h5>
+                            <p class="post-intro">This is a Senetence and descrition od projects</p>
+                        </div>
+                    </div>
+                </div>
+
+          </div>
+      </div>
     </section>
     <section class="s2">
-      <div class="main-container">Contact</div>
+      <div class="main-container">
+        <h3 style="text-align: center">Get In Touch</h3>
+
+        <form action="" id="contact-form">
+
+            <label>Name</label>
+            <input type="text" class="input-field" name="name">
+            <label>Subject</label>
+            <input type="text" class="input-field" name="subject">
+            <label>Email</label>
+            <input type="text" class="input-field" name="naemailme">
+            <label>Message</label>
+            <textarea name="messafe" class="input-field"></textarea>
+
+
+            <input id="submit-btn" type="submit" value="Send">
+        </form>
+        
+      </div>
     </section>
+
+    <script type="text/javascript" src="./index.js">  </script>
+
   </body>
 </html>
