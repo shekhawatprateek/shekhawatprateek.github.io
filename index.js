@@ -32,12 +32,3 @@ function setTheme(mode) {
 
     localStorage.setItem('theme', mode)
 }
-
-window.onload = function() {
-    var $recaptcha = document.querySelector('.g-recaptcha');
-    console.log("workds")
-
-    if($recaptcha) {
-        $recaptcha.setAttribute("required", "required");
-    }
-};
