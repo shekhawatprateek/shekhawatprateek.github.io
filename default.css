@@ -396,19 +396,21 @@ box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
 
 
 .g-recaptcha {
-    
+    margin-top: 9px;
+    text-align: -webkit-center;
 }
 
 
 #submit-btn {
     margin-top: 10px;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: #fff;
     background-color: var(--buttonColor);
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
 
 
