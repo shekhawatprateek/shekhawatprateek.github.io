@@ -181,15 +181,15 @@
         <form method="POST" id="contact-form" data-netlify="true">
 
             <label>Name</label>
-            <input type="text" class="input-field" name="name">
+            <input type="text" class="input-field" name="name" required>
             <label>Subject</label>
-            <input type="text" class="input-field" name="subject">
+            <input type="text" class="input-field" name="subject" required>
             <label>Email</label>
-            <input type="text" class="input-field" name="naemailme">
+            <input type="text" class="input-field" name="email" required>
             <label>Message</label>
-            <textarea name="messafe" class="input-field"></textarea>
+            <textarea name="message" class="input-field" required></textarea>
 
-            <div data-netlify-recaptcha="true" ></div>
+            <div data-netlify-recaptcha="true" required ></div>
 
             <input id="submit-btn" type="submit" value="Send">
         </form>
