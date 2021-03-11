@@ -45,7 +45,7 @@ label,
 input,
 textarea {
   color: var(--secondaryText);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 a {
@@ -293,12 +293,31 @@ h6 {
 
 .social-links {
     display: grid;
-    align-content: center;
     text-align: center;
+}
+
+.social-links a{
+    width: fit-content;
+    justify-self: center;
+    transition: .4s ease;
+}
+
+
+.social-links a:hover{
+    width: fit-content;
+    justify-self: center;
+    transform: scale(1.2);
+}
+
+.social-link {
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 #social_img {
     width: 100%;
+    
 }
 
 .post-wrapper {
@@ -314,7 +333,7 @@ border: 1px solid var(--borderColor);
 box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     cursor: pointer;
 }
 
