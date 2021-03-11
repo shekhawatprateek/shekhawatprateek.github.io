@@ -33,11 +33,11 @@ function setTheme(mode) {
     localStorage.setItem('theme', mode)
 }
 
-$("form").submit(function(event) {
-
-    var recaptcha = $("#g-recaptcha-response").val();
-    if (recaptcha === "") {
-       event.preventDefault();
-       alert("Please check the recaptcha");
+var form = document.getElementById('contact-form');
+form.addEventListener("submit", function(event){
+    if (grecaptcha.getResponse() === '') {                            
+      event.preventDefault();
+      alert('Please check the recaptcha');
     }
- });
+  }
+, false);
